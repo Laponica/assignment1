@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
 
     <!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="/assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="/assets/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="/assets/css/custom.css" rel="stylesheet" />
+    <link href="/assets/js/morris-0.4.3.min.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
@@ -25,62 +26,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Yuzu</a> 
+                <a class="navbar-brand" href="/Welcome"><img style='margin-top:-20px' src='/assets/img/team_logo.png' width='150' height='70' /></a> 
             </div>
         </nav>   
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
+        <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                 <li class="text-center">
-                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
-                    </li>
+                    <img src="/assets/img/Gundam.jpg" class="user-image img-responsive"/>
+                </li>
+              
+                    {nav}
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-2x"></i>User Role<b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                          <li><a href="/roles/actor/Guest">Guest</a></li>
+                          <li><a href="/roles/actor/Worker">Worker</a></li>
+                          <li><a href="/roles/actor/Supervisor">Supervisor</a></li>
+                          <li><a href="/roles/actor/Boss">Boss</a></li>
+                      </ul>
+                    </li>   
                 
-                    
-                    <li>
-                        <a class="active-menu"  href="index.html"><i class="fa fa-dashboard fa-3x"></i> Homepage </a>
-                    </li>
-                      <li>
-                        <a  href="ui.html"><i class="fa fa-desktop fa-3x"></i> Parts </a>
-                    </li>
-                    <li>
-                        <a  href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i> Assembly </a>
-                    </li>
-                           <li  >
-                        <a  href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i> History </a>
-                    </li>           
-                                       
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap fa-3x"></i> About<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#">Yuzu</a>
-                            </li>
-                            <li>
-                                <a href="#">Daniel</a>
-                            </li>
-                            <li>
-                                <a href="#">Jonathan<span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Carson</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">#</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">#</a>
-                                    </li>
 
-                                </ul>
-                               
-                            </li>
-                        </ul>
-                      </li>   
                 </ul>
-               
+                
+
             </div>
-            
         </nav>  
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
@@ -97,21 +71,31 @@
                  <!-- /. ROW  -->
                  <hr />
                
-    </div>
+                </div>
+                <div class='panel-footer text-center'> 
+                    © 2017 Yuzu (Daniel Tian, Jonathan Huang, Kevin Mitchell, Carson Yamamoto, Simon) 
+                        <img src='/assets/img/team_logo.png' width='70' height='35' />
+                </div>
              <!-- /. PAGE INNER  -->
             </div>
+
          <!-- /. PAGE WRAPPER  -->
         </div>
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="/assets/js/jquery-1.10.2.js"></script>
       <!-- BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
     <!-- METISMENU SCRIPTS -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
+    <script src="/assets/js/jquery.metisMenu.js"></script>
+    <!-- CHARTS SCRIPTS-->
+    <script src="/assets/js/raphael-2.1.0.min.js"></script>
+    <script src="/assets/js/morris.js"></script>
       <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <!--Site JS -->
+    <script src="/assets/js/site.js"></script>
    
 </body>
 </html>
